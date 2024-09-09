@@ -1,0 +1,14 @@
+<odoo>
+
+    <!-- Основное меню модуля -->
+    <menuitem id="main_risk_master_menu" name="RiskMaster Pro" sequence="10" groups="risk_master_pro.group_risk_master_user"/>
+
+    <!-- Подменю для отчетов по рискам сотрудников -->
+    <menuitem id="menuitem_employee_template_report" name="Insurance Claims Files Report"
+              parent="main_risk_master_menu" action="action_employee_template_reports" sequence="10" groups="risk_master_pro.group_risk_master_user"/>
+
+    <!-- Подменю для документации -->
+    <menuitem id="menuitem_risk_master_documentation" name="Documentation"
+              parent="main_risk_master_menu" action="action_risk_master_documentation" sequence="20" groups="risk_master_pro.group_risk_master_user"/>
+
+</odoo>

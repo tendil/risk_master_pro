@@ -1,0 +1,22 @@
+<odoo>
+
+    <!-- Демо данные для отчёта по страховым случаям -->
+    <record id="demo_employee_report_1" model="employee.report">
+        <field name="claimant_code">CLAIM001</field>
+        <field name="insurer_id" ref="demo_health_insurance_provider_1"/>
+        <field name="claimant_type">medico</field>
+        <field name="date_from">2024-01-01</field>
+        <field name="date_to">2024-03-31</field>
+        <field name="partner_id" ref="base.res_partner_1"/>
+    </record>
+
+    <record id="demo_employee_report_2" model="employee.report">
+        <field name="claimant_code">CLAIM002</field>
+        <field name="insurer_id" ref="demo_health_insurance_provider_2"/>
+        <field name="claimant_type">no_medico</field>
+        <field name="date_from">2024-04-01</field>
+        <field name="date_to">2024-06-30</field>
+        <field name="partner_id" ref="base.res_partner_2"/>
+    </record>
+
+</odoo>

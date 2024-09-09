@@ -1,0 +1,24 @@
+<odoo>
+
+    <!-- Демо данные для страховых провайдеров -->
+    <record id="demo_health_insurance_provider_1" model="health.insurance.provider">
+        <field name="name">HealthInsureCo</field>
+        <field name="code">HI123</field>
+        <field name="address">123 Health St, Wellness City</field>
+        <field name="phone">123-456-7890</field>
+        <field name="email">info@healthinsureco.com</field>
+        <field name="website">http://www.healthinsureco.com</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="demo_health_insurance_provider_2" model="health.insurance.provider">
+        <field name="name">Wellness Protect</field>
+        <field name="code">WP456</field>
+        <field name="address">456 Wellness Blvd, Health City</field>
+        <field name="phone">987-654-3210</field>
+        <field name="email">support@wellnessprotect.com</field>
+        <field name="website">http://www.wellnessprotect.com</field>
+        <field name="active">True</field>
+    </record>
+
+</odoo>

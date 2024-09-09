@@ -1,0 +1,15 @@
+<odoo>
+
+    <!-- Группа для администраторов RiskMaster Pro -->
+    <record id="group_risk_master_admin" model="res.groups">
+        <field name="name">RiskMaster Admin</field>
+        <field name="category_id" ref="base.module_category_human_resources"/>
+    </record>
+
+    <!-- Группа для обычных пользователей RiskMaster Pro -->
+    <record id="group_risk_master_user" model="res.groups">
+        <field name="name">RiskMaster User</field>
+        <field name="category_id" ref="base.module_category_human_resources"/>
+    </record>
+
+</odoo>

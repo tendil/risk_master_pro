@@ -1,0 +1,20 @@
+<odoo>
+
+    <!-- Демо данные для страховых отчётов -->
+    <record id="demo_insurance_report_1" model="insurance.report">
+        <field name="name">Insurance Analysis Q1</field>
+        <field name="date_from">2024-01-01</field>
+        <field name="date_to">2024-03-31</field>
+        <field name="insurance_company_id" ref="demo_health_insurance_provider_1"/>
+        <field name="report_type">group_by_claim_type</field>
+    </record>
+
+    <record id="demo_insurance_report_2" model="insurance.report">
+        <field name="name">Expense Analysis Q2</field>
+        <field name="date_from">2024-04-01</field>
+        <field name="date_to">2024-06-30</field>
+        <field name="insurance_company_id" ref="demo_health_insurance_provider_2"/>
+        <field name="report_type">expense_analysis</field>
+    </record>
+
+</odoo>

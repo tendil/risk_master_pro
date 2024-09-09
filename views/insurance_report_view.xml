@@ -1,0 +1,59 @@
+<odoo>
+
+    <record id="view_insurance_report_tree" model="ir.ui.view">
+        <field name="name">insurance.report.tree</field>
+        <field name="model">insurance.report</field>
+        <field name="arch" type="xml">
+            <tree string="Insurance Reports">
+                <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="report_type"/>
+                <field name="summary_result" string="Summary"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_insurance_report_form" model="ir.ui.view">
+        <field name="name">insurance.report.form</field>
+        <field name="model">insurance.report</field>
+        <field name="arch" type="xml">
+            <form string="Insurance Report">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                        </group>
+                        <group>
+                            <field name="insurance_company_id"/>
+                            <field name="employee_id"/>
+                        </group>
+                        <group>
+                            <field name="report_type"/>
+                        </group>
+                    </group>
+                    <button name="generate_report" string="Generate Report" type="object" class="btn-primary"/>
+                    <group>
+                        <field name="report_result" widget="html" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_insurance_reports" model="ir.actions.act_window">
+        <field name="name">Insurance Reports</field>
+        <field name="res_model">insurance.report</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create an Insurance Report
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_insurance_reports" name="Insurance Reports" parent="main_risk_master_menu" action="action_insurance_reports"/>
+
+</odoo>

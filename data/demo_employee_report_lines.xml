@@ -1,0 +1,41 @@
+<odoo>
+
+    <!-- Демо данные для строк отчёта 1 -->
+    <record id="demo_employee_report_line_1" model="employee.report.line">
+        <field name="report_reference_id" ref="demo_employee_report_1"/>
+        <field name="auth_code">AUTH001</field>
+        <field name="service_date_actual">2024-01-15</field>
+        <field name="affiliate_name">Affiliate Corp</field>
+        <field name="insured_person_name">John Doe</field>
+        <field name="identity_number">123456789</field>
+        <field name="total_claimed_amount">1500.00</field>
+        <field name="service_charge">1000.00</field>
+        <field name="goods_charge">500.00</field>
+        <field name="total_payable">1600.00</field>
+        <field name="affiliate_discrepancy">0.00</field>
+        <field name="invoice_number">INV001</field>
+        <field name="invoice_date_actual">2024-01-20</field>
+        <field name="service_type">out_invoice</field>
+        <field name="sub_service_type">medical</field>
+    </record>
+
+    <!-- Демо данные для строк отчёта 2 -->
+    <record id="demo_employee_report_line_2" model="employee.report.line">
+        <field name="report_reference_id" ref="demo_employee_report_2"/>
+        <field name="auth_code">AUTH002</field>
+        <field name="service_date_actual">2024-04-10</field>
+        <field name="affiliate_name">Tech Support Ltd</field>
+        <field name="insured_person_name">Jane Smith</field>
+        <field name="identity_number">987654321</field>
+        <field name="total_claimed_amount">3000.00</field>
+        <field name="service_charge">2000.00</field>
+        <field name="goods_charge">1000.00</field>
+        <field name="total_payable">3200.00</field>
+        <field name="affiliate_discrepancy">100.00</field>
+        <field name="invoice_number">INV002</field>
+        <field name="invoice_date_actual">2024-04-15</field>
+        <field name="service_type">in_invoice</field>
+        <field name="sub_service_type">non_medical</field>
+    </record>
+
+</odoo>

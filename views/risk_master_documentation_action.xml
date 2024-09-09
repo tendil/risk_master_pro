@@ -1,0 +1,11 @@
+<odoo>
+
+    <record id="action_risk_master_documentation" model="ir.actions.act_window">
+        <field name="name">RiskMaster Pro Documentation</field>
+        <field name="res_model">risk.master.documentation</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_risk_master_documentation_form"/>
+        <field name="target">current</field>
+    </record>
+
+</odoo>
